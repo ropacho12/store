@@ -1,0 +1,36 @@
+body{
+    background-color: #acb1b4;
+}
+
+.title{
+    font-family: 'Merriweather', serif;
+   
+    color:  rgb(245, 239, 248);
+}
+
+header{
+    background:#02487c;
+	width:100%;
+	padding:20px;
+
+	
+}
+.lista{
+    background-color: darkorange;
+    display: inline-block;
+
+   
+}
+
+h2{
+    color:#02487c;
+    text-align: center;
+
+}
+
+p {
+color: white;
+padding:10px;
+margin: 5px;
+border: 5px solid #02487c;
+}

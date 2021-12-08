@@ -1,0 +1,28 @@
+body{
+ background-color: #acb1b4;}
+
+
+
+
+
+ header{
+     background-color: #02487c;
+     color: white;
+     font-family: 'Merriweather', serif;
+     
+ }
+
+ div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ a{
+     color: white;
+     
+ }
+
+ div p {
+     border: 5px solid #02487c;
+ }
