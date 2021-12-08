@@ -2,10 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    list-style: none;
     
     
 }
+/*------------------------------------------------------*/
 @font-face { 
 font-family: comforta;
 src: url(../Comfortaa-Medium.ttf);
@@ -15,7 +16,7 @@ src: url(../Comfortaa-Medium.ttf);
 body{
 font-family: comforta;
 }
-
+/*-----------------------------------------------------------------*/
 .logo{
     border-radius: 50%;
     width: 150px;
@@ -43,6 +44,9 @@ font-family: comforta;
 .headerNavLinks{
     display: flex;
     align-items: center;
+
+    animation: pacho 10s infinite;
+
 }
 
 .headerNavLinks a {
@@ -57,8 +61,8 @@ font-family: comforta;
 .headerNavLinks a:hover{
     background-color: rgb(95, 175, 255);
 }
-
-.imagenHome{
+/*-----------------------------------imagen wado backg----------*/
+.imagenHome{ /*padre del h1-boton*/
     width: 100%;
     height: 100vh;
     background-image: url('../img/logo-2.png');
@@ -67,8 +71,66 @@ font-family: comforta;
     background-repeat: no-repeat;
     background-attachment: scroll;
     border-bottom: 5px solid black;
+
+    /*esto es prop. del boton del h1*/
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 3s;
 }
 
+/*texto del background*/
+
+.imagenHome h1{
+    width: 500px;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+   font-size: 2rem;
+   line-height: 4rem;
+}
+
+
+@keyframes pacho {
+    from {
+        margin: 10px 10px 10px -100VW;
+        opacity: 0;
+        }
+    to {
+        margin: 10px 10px 10px 10px;
+        opacity: 1;
+    }
+}
+
+
+.imagenHome p{
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 15px;
+
+    animation: pacho 10s infinite;
+}
+
+
+.botonContac{
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 10px;
+    border-radius:10px;
+    border: none;
+    background-color: white;
+    color: black;
+    transition: all .3s;
+
+}
+.botonContac:hover{
+    background-color: rgba(70, 116, 243, 0.89);
+    color: white
+}
+
+/*-------------------------------------------------------------*/
 .mainHome{
     display: grid;
     grid-template-columns: 25vw 60vw;
@@ -189,9 +251,30 @@ footer a{
     align-items:flex-start;
     flex-direction:column;
 }
+/*-------------------responsive- Home------------------------*/
+@media only screen and (max-width: 414px){
+    body{
+        background-color: chartreuse;
+    }
 
-.boton{
-    color: rgb(255, 0, 21);
-    padding: 1rem;
+    .headerHome{
+        display: flex;
+        flex-direction: column;
+    }
+    .headerNavLinks li{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+
+    .headerNavLinks li a{
+        font-size: .6rem;
+    }
+
+    .headerNavLinks li:first-child{
+        border-left: none;
+    }
+    .headerNavLinks li:last-child{
+        border-right: none;
+    }
 
 }
