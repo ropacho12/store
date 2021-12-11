@@ -6,7 +6,7 @@
     
     
 }
-/*------------------------------------------------------*/
+/*-----------------------Estilos Index-------------------------------*/
 @font-face { 
 font-family: comforta;
 src: url(../Comfortaa-Medium.ttf);
@@ -16,7 +16,7 @@ src: url(../Comfortaa-Medium.ttf);
 body{
 font-family: comforta;
 }
-/*-----------------------------------------------------------------*/
+/*-----------------------------header- home-----------------------------------*/
 .logo{
     border-radius: 50%;
     width: 150px;
@@ -45,7 +45,7 @@ font-family: comforta;
     display: flex;
     align-items: center;
 
-    animation: pacho 10s infinite;
+    animation: pacho 10s linear;
 
 }
 
@@ -56,6 +56,8 @@ font-family: comforta;
     display: block;
     transition: all .3s;
     font-size: .8rem;
+
+    
 }
 
 .headerNavLinks a:hover{
@@ -89,6 +91,8 @@ font-family: comforta;
     color: white;
    font-size: 2rem;
    line-height: 4rem;
+
+   animation: pacho 4s linear;
 }
 
 
@@ -105,12 +109,12 @@ font-family: comforta;
 
 
 .imagenHome p{
-    background-color: red;
+    
     color: white;
     font-size: 1rem;
     padding: 15px;
 
-    animation: pacho 10s infinite;
+    animation: pacho 4s linear ;
 }
 
 
@@ -123,6 +127,7 @@ font-family: comforta;
     background-color: white;
     color: black;
     transition: all .3s;
+    animation: pacho 4s linear
 
 }
 .botonContac:hover{
@@ -169,7 +174,7 @@ footer{
 
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 
 footer a{
@@ -277,4 +282,330 @@ footer a{
         border-right: none;
     }
 
+}
+
+/*--------------------------------fonts awesone---------*/
+.iconos a i{
+ color:white;
+  font-size: 2rem;
+    
+}
+
+/*---------------------------------NOSOTROS------------------------------------------*/
+
+
+                    /*-------------------header------------*/
+.hola{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+    background-color: rgb(30, 143, 255);
+    color: rgb(242, 242, 246);
+    padding: 0 16px;
+}
+
+
+
+.lista{
+    background-color: rgb(30, 143, 255);
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hola a:hover{
+    background-color: rgb(95, 175, 255);
+    
+}
+
+
+.lista li a{
+    color: white;
+    margin-left: 25px;
+    padding: 20px;
+    
+    
+}
+/*---------------------article-foto----------*/
+.foto{
+background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+color: white;
+margin: auto;
+padding: 40px;
+width: 80%;
+height: 50%;
+border-radius: 30px;
+
+
+
+display:flex;
+justify-content: space-between;
+
+
+
+}
+.conten{
+    background-color: white;
+    margin-top: 40px;
+    
+   
+}
+.parraffo{
+    
+    justify-content: center;
+    margin: 10px;
+}
+.foto img{
+    margin-left: 10px;
+    animation: pacho2 5s linear;
+}
+
+
+
+@keyframes pacho2 {
+    from {
+        margin-bottom: 10px 10px 10px -100wp ;
+        opacity: 0;
+        }
+    to {
+        margin: 10px 10px 10px 10px;
+        opacity: 1;
+    }
+}
+
+
+/*----------------------------------------sobre nosotros- parrafo---------------*/
+
+.title-nosotros{
+    background-image: linear-gradient(to right, #4facfe 0%, #00d8df 100%);
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    animation: pacho 5s linear
+}
+.tex-nosotros{
+    background-color:rgb(192, 190, 190);
+    margin-top: 20px;
+    text-align:center;
+    
+}
+
+
+/*-------------------------------------------seccion servicios--------------------------*/
+.cuerpo{
+    background-color:white;
+    list-style: none;
+}
+
+.title-servicios{
+    padding: 10px;
+    margin: 5px;
+}
+.headerServicios{
+    
+    background-image: linear-gradient(to right, #4facfe 0%, #00d8df 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navServicios ul{
+    
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+border-left: 2px solid rgba(255, 255, 255, 0.664);
+} 
+
+
+i{
+    padding: 10px;
+}
+.links-servicios{ /*---- cajas de nombres de sericio---*/
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+    padding: 10px;
+    margin-top: 20px;
+   
+    display: flex;
+    justify-content: center;
+}
+.fotoH{
+    width: 400px;
+    height: 300px;
+    border-radius: 40px;
+}
+.links-servicios ul li{
+background-color: white;
+color: rgb(30, 143, 255);
+padding:  10px;
+margin:10px ;
+border: 2px solid  rgb(30, 143, 255) ;
+border-radius: 10px;
+list-style: none;
+}
+.links-servicios ul :hover{
+    background-color: rgb(197, 226, 255);
+}
+:root{
+    scroll-behavior: smooth;
+}
+/*-------------------------------parte de la descripcion de servicios-------*/
+.caja{
+
+margin-top: 30px;
+padding: 10px;
+box-shadow: 15px 10px 20px black;
+
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap:  1rem 1rem;
+
+}
+
+
+.cajaUno {
+    background-color:rgb(218, 218, 218);
+    border: 3px solid rgb(218, 218, 218);
+    box-shadow: 15px 10px 8px rgba(7, 6, 6, 0.692);
+}
+
+.cajaDos{
+
+    border: 3px solid rgb(218, 218, 218);
+    box-shadow: 15px 10px 8px rgba(7, 6, 6, 0.692);
+
+}
+.cajaTres{
+    border: 3px solidrgb(218, 218, 218);
+    border: 3px solid rgb(218, 218, 218);
+    box-shadow: 15px 10px 8px rgba(7, 6, 6, 0.692);
+}
+.cajaCuatro{
+    border:3px solid rgb(218, 218, 218);
+    box-shadow: 15px 10px 8px rgba(7, 6, 6, 0.692); 
+}
+.caja div:hover{
+    border:3px solid  rgb(30, 143, 255);
+    background-color:rgb(218, 218, 218);
+    box-shadow: 15px 10px 8px rgba(66, 106, 236, 0.692);
+
+}
+/*-------------------------------- textos de la desripcion------------------------*/
+h3{
+    background: rgb(200, 200, 200);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.parrafo-serv{
+    text-align: center;
+}
+
+/*---------------------------------------------------estilos de la parte de donde estamos---------------------*/
+
+header nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+    background-color: rgb(30, 143, 255);
+    color: rgb(242, 242, 246);
+    padding: 0 16px;
+}
+.lis{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    
+
+   
+    
+    
+}
+
+.lis li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: all .3s;
+    font-size: 1rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.664);
+    
+}
+.lis li a:hover{
+    background-color: rgb(95, 175, 255);
+    
+}
+.parrafoDonde{
+    background-color: rgb(83, 162, 251);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+
+    
+}
+.title-ubi{ /* titulo "nuestra ubicacion"--*/
+    color: white;
+    width:100%;
+    text-align: center;
+    margin: 10px ;
+    text-align: center;
+    animation: pacho 3s linear;
+    
+}
+
+.fotoMapa{ /*foto del google maps*/
+    background-color:rgb(83, 162, 251);
+    margin: 30px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.texDos{ /*parrafo que puse para que no quede todo muy vacio*/
+    background-color: rgba(243, 222, 222, 0.712);
+    text-align:center;
+    padding: 20px;
+    margin: 30px;
+}
+
+/*------------------------------------------Contactos----------------------------*/
+.contenedor-form{
+    background-color: rgb(235, 101, 101);
+    background-image: url(https://www.cenedi.com/assets/Meca%CC%81nica-de-Motos.jpg);
+    padding: 144px 32px 32px 32px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor-form .card{
+    opacity: .8;
+    padding: 16px;
+    transition: all .3s;
+}
+
+.contenedor-form:hover .card{
+    opacity: 1;
 }
