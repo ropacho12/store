@@ -1,0 +1,4 @@
+git remote add origin https://github.com/ropacho12/mi.repositorioCoder.git
+
+git branch -M master
+git push -t origin master

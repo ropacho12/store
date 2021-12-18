@@ -1,0 +1,115 @@
+/*----------------linea 401---------------------------seccion servicios--------------------------*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    transition: all .3s;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.headerServicios{
+    
+    background-image: linear-gradient(to right, #4facfe 0%, #00d8df 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 0 0 10px;
+    
+}
+
+.navServicios{
+    ul{
+       li{
+           a{
+                display: block;
+                padding: 20px;
+                height: 100%;
+                color: white;    
+           }
+       } 
+    }
+}
+
+.fotoH{
+    width: 400px;
+    height: 300px;
+    border-radius: 40px;
+}
+.links-servicios{
+    display: flex;
+    justify-content: flex-end;
+    min-height: 70vh;
+
+    background-image: url('/img/hhhhhhh.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 0 0 100000px rgba(0, 0, 0, 0.3) inset;
+
+    ul{
+        li{
+            a{
+                font-size: 1.2rem;
+                display: block;
+
+                background-color: rgba(255, 255, 255, 1);
+                padding:  28px;
+                margin:16px ;
+                list-style: none;
+                text-align: center;
+                color: black;
+
+                text-transform: capitalize;
+                transition: all .3s;
+            }
+
+            a:hover{
+                background-color: dodgerblue;
+                color: white;
+                transform: translateX(-16px);
+            }
+        }
+    }
+}
+
+/*-------------------------------parte de la descripcion de servicios-------*/
+
+.cajas{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+
+    article{
+        margin: 5vw;
+        width: 90vw;        
+        max-width: 60vw;
+
+        display: flex;
+        align-items: center;
+
+        h3{
+            margin-bottom: 16px;
+        }
+
+        h3::first-letter{
+            text-transform: capitalize;
+        }
+
+        img{
+
+            max-width: 40%;
+            padding:0 10%;
+        }
+
+    }
+}
+
