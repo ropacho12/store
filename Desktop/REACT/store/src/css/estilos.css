@@ -1,0 +1,26 @@
+
+.contenedor{
+    background-color: rgb(63, 144, 242);
+    color: white;
+    padding: 8px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white;
+   
+    display: flex;
+
+}
+.nav-link{
+    /* background-color: rgb(204, 221, 230); */
+    border: 1px solid black;
+    border-radius: 20%;
+    margin: 10px;
+    
+}
+.nav-link:hover{
+    background-color:rgb(136, 186, 246) ;
+}
